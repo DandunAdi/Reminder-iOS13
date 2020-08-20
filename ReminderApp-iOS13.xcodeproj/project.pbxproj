@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FD4BFD2C24EE77E1000EC6C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4BFD2B24EE77E1000EC6C8 /* AppDelegate.swift */; };
 		FD4BFD2E24EE77E1000EC6C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4BFD2D24EE77E1000EC6C8 /* SceneDelegate.swift */; };
-		FD4BFD3024EE77E1000EC6C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4BFD2F24EE77E1000EC6C8 /* ViewController.swift */; };
 		FD4BFD3324EE77E1000EC6C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4BFD3124EE77E1000EC6C8 /* Main.storyboard */; };
 		FD4BFD3524EE77E4000EC6C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4BFD3424EE77E4000EC6C8 /* Assets.xcassets */; };
 		FD4BFD3824EE77E4000EC6C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4BFD3624EE77E4000EC6C8 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		FD4BFD2824EE77E1000EC6C8 /* ReminderApp-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReminderApp-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4BFD2B24EE77E1000EC6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD4BFD2D24EE77E1000EC6C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD4BFD2F24EE77E1000EC6C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD4BFD3224EE77E1000EC6C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD4BFD3424EE77E4000EC6C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD4BFD3724EE77E4000EC6C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,46 @@
 		FD4BFD2A24EE77E1000EC6C8 /* ReminderApp-iOS13 */ = {
 			isa = PBXGroup;
 			children = (
-				FD4BFD2B24EE77E1000EC6C8 /* AppDelegate.swift */,
-				FD4BFD2D24EE77E1000EC6C8 /* SceneDelegate.swift */,
-				FD4BFD2F24EE77E1000EC6C8 /* ViewController.swift */,
-				FD4BFD3124EE77E1000EC6C8 /* Main.storyboard */,
+				FD4BFD3F24EE7826000EC6C8 /* Model */,
+				FD4BFD4024EE782F000EC6C8 /* View */,
+				FD4BFD4124EE7836000EC6C8 /* Controller */,
+				FD4BFD4224EE7843000EC6C8 /* Supporting Files */,
 				FD4BFD3424EE77E4000EC6C8 /* Assets.xcassets */,
-				FD4BFD3624EE77E4000EC6C8 /* LaunchScreen.storyboard */,
 				FD4BFD3924EE77E4000EC6C8 /* Info.plist */,
 			);
 			path = "ReminderApp-iOS13";
+			sourceTree = "<group>";
+		};
+		FD4BFD3F24EE7826000EC6C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD4BFD4024EE782F000EC6C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD4BFD3124EE77E1000EC6C8 /* Main.storyboard */,
+				FD4BFD3624EE77E4000EC6C8 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD4BFD4124EE7836000EC6C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD4BFD4224EE7843000EC6C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD4BFD2B24EE77E1000EC6C8 /* AppDelegate.swift */,
+				FD4BFD2D24EE77E1000EC6C8 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +167,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD4BFD3024EE77E1000EC6C8 /* ViewController.swift in Sources */,
 				FD4BFD2C24EE77E1000EC6C8 /* AppDelegate.swift in Sources */,
 				FD4BFD2E24EE77E1000EC6C8 /* SceneDelegate.swift in Sources */,
 			);
