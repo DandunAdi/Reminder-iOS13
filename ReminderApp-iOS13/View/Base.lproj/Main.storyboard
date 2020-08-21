@@ -28,6 +28,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhz-gT-zGR">
                                         <rect key="frame" x="359.66666666666669" y="71.333333333333329" width="24.333333333333314" height="23.666666666666671"/>
                                         <color key="tintColor" name="fgPurple"/>
+                                        <state key="normal">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -132,53 +135,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UR-bw-01b">
-                                <rect key="frame" x="49" y="157" width="62" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UR-bw-01b">
+                                <rect key="frame" x="50" y="135" width="62" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" name="textDarkPurple"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pFd-n1-NPS">
-                                <rect key="frame" x="49" y="210" width="317" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pFd-n1-NPS">
+                                <rect key="frame" x="50" y="189" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhG-Gk-vOI">
-                                <rect key="frame" x="49" y="291" width="71" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhG-Gk-vOI">
+                                <rect key="frame" x="50" y="248" width="71" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" name="textDarkPurple"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="n3o-3K-KhU">
-                                <rect key="frame" x="0.0" y="349" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="n3o-3K-KhU">
+                                <rect key="frame" x="0.0" y="305" width="414" height="216"/>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbo-7g-aUo">
-                                <rect key="frame" x="49" y="535" width="167" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbo-7g-aUo">
+                                <rect key="frame" x="50" y="561" width="167" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" name="textDarkPurple"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGn-VW-Luy">
-                                <rect key="frame" x="317" y="546" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGn-VW-Luy">
+                                <rect key="frame" x="315" y="566" width="51" height="31"/>
                                 <color key="onTintColor" name="fgPurple"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21v-uG-BUQ">
-                                <rect key="frame" x="49" y="709" width="315" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21v-uG-BUQ">
+                                <rect key="frame" x="50" y="707" width="314" height="85"/>
                                 <color key="backgroundColor" name="fgPurple"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="ra5-Em-ce0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <state key="normal" title="SAVE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81R-xW-oPl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eG9-F0-xJw">
+                                        <rect key="frame" x="20" y="68.666666666666671" width="77.666666666666671" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                        <color key="tintColor" name="fgPurple"/>
+                                        <state key="normal" title=" Back" image="arrow.left.circle" catalog="system">
+                                            <color key="titleColor" name="textDarkPurple"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="large" weight="medium"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eG9-F0-xJw" secondAttribute="trailing" constant="20" symbolic="YES" id="C9h-Sf-dRa"/>
+                                    <constraint firstItem="eG9-F0-xJw" firstAttribute="leading" secondItem="81R-xW-oPl" secondAttribute="leading" constant="20" id="XRV-VM-bwU"/>
+                                    <constraint firstAttribute="bottom" secondItem="eG9-F0-xJw" secondAttribute="bottom" constant="15" id="dh6-yW-c8p"/>
+                                    <constraint firstAttribute="height" constant="110" id="xhP-kg-sTg"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="bgLightGray"/>
+                        <constraints>
+                            <constraint firstItem="9UR-bw-01b" firstAttribute="leading" secondItem="ZzT-fi-jUg" secondAttribute="leading" constant="50" id="03u-m9-uWS"/>
+                            <constraint firstItem="ZzT-fi-jUg" firstAttribute="trailing" secondItem="21v-uG-BUQ" secondAttribute="trailing" constant="50" id="5IP-6j-dRH"/>
+                            <constraint firstItem="ZzT-fi-jUg" firstAttribute="trailing" secondItem="mGn-VW-Luy" secondAttribute="trailing" constant="50" id="6gf-iY-mty"/>
+                            <constraint firstItem="Jbo-7g-aUo" firstAttribute="leading" secondItem="ZzT-fi-jUg" secondAttribute="leading" constant="50" id="9mF-BN-IVU"/>
+                            <constraint firstItem="pFd-n1-NPS" firstAttribute="top" secondItem="9UR-bw-01b" secondAttribute="bottom" constant="12" id="9xC-lI-RIY"/>
+                            <constraint firstItem="mGn-VW-Luy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jbo-7g-aUo" secondAttribute="trailing" constant="8" symbolic="YES" id="F0I-pm-0Wo"/>
+                            <constraint firstItem="ZzT-fi-jUg" firstAttribute="bottom" secondItem="21v-uG-BUQ" secondAttribute="bottom" constant="70" id="NqF-hQ-rrt"/>
+                            <constraint firstItem="n3o-3K-KhU" firstAttribute="trailing" secondItem="ZzT-fi-jUg" secondAttribute="trailing" id="OYM-YF-cDi"/>
+                            <constraint firstItem="ZzT-fi-jUg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AhG-Gk-vOI" secondAttribute="trailing" symbolic="YES" id="PC9-NJ-L4c"/>
+                            <constraint firstItem="ZzT-fi-jUg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9UR-bw-01b" secondAttribute="trailing" symbolic="YES" id="QAT-bz-Kir"/>
+                            <constraint firstItem="mGn-VW-Luy" firstAttribute="top" secondItem="n3o-3K-KhU" secondAttribute="bottom" constant="45" id="Wg9-P9-dWh"/>
+                            <constraint firstItem="AhG-Gk-vOI" firstAttribute="top" secondItem="pFd-n1-NPS" secondAttribute="bottom" constant="25" id="ZTG-oA-CDH"/>
+                            <constraint firstItem="AhG-Gk-vOI" firstAttribute="leading" secondItem="ZzT-fi-jUg" secondAttribute="leading" constant="50" id="Zxs-Aq-9B9"/>
+                            <constraint firstItem="9UR-bw-01b" firstAttribute="top" secondItem="81R-xW-oPl" secondAttribute="bottom" constant="25" id="dye-uE-v7B"/>
+                            <constraint firstItem="n3o-3K-KhU" firstAttribute="leading" secondItem="ZzT-fi-jUg" secondAttribute="leading" id="iJe-8w-REt"/>
+                            <constraint firstItem="81R-xW-oPl" firstAttribute="top" secondItem="mC3-xI-Z5L" secondAttribute="top" id="jQl-RJ-Pai"/>
+                            <constraint firstItem="81R-xW-oPl" firstAttribute="trailing" secondItem="ZzT-fi-jUg" secondAttribute="trailing" id="o8K-Ye-dCP"/>
+                            <constraint firstItem="pFd-n1-NPS" firstAttribute="leading" secondItem="ZzT-fi-jUg" secondAttribute="leading" constant="50" id="orW-3r-r8C"/>
+                            <constraint firstItem="n3o-3K-KhU" firstAttribute="top" secondItem="AhG-Gk-vOI" secondAttribute="bottom" constant="15" id="p68-vO-yz5"/>
+                            <constraint firstItem="81R-xW-oPl" firstAttribute="leading" secondItem="ZzT-fi-jUg" secondAttribute="leading" id="pww-zI-XaC"/>
+                            <constraint firstItem="21v-uG-BUQ" firstAttribute="leading" secondItem="ZzT-fi-jUg" secondAttribute="leading" constant="50" id="quF-Lg-8vU"/>
+                            <constraint firstItem="Jbo-7g-aUo" firstAttribute="top" secondItem="n3o-3K-KhU" secondAttribute="bottom" constant="40" id="rUy-Yo-vyi"/>
+                            <constraint firstItem="ZzT-fi-jUg" firstAttribute="trailing" secondItem="pFd-n1-NPS" secondAttribute="trailing" constant="50" id="xli-SW-biC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZzT-fi-jUg"/>
                     </view>
                 </viewController>
@@ -188,6 +233,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.left.circle" catalog="system" width="128" height="121"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <namedColor name="bgLightGray">
             <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
