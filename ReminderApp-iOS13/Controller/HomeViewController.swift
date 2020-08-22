@@ -14,14 +14,12 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        ReminderService.shared.count()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderCell", for: indexPath) as! ReminderCell
-        cell.titleLabel.text = "Running"
-        cell.dateLabel.text = "Saturday 21/21/2012 20.21PM"
-        cell.containerView.layer.cornerRadius = 15
+        cell.updateCell(reminder: ReminderService.shared.getReminder(at: indexPath.row))
         return cell
     }
 }

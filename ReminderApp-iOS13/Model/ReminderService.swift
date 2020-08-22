@@ -70,12 +70,17 @@ class ReminderService {
     
     // Get all of reminders
     func getAllReminders() -> [Reminder] {
-        return reminders
+        reminders
     }
     
     // Get a specific reminder
     func getReminder(at index: Int) -> Reminder {
-        return reminders[index]
+        reminders[index]
+    }
+    
+    // Count reminders
+    func count() -> Int {
+        reminders.count
     }
     
     // Update

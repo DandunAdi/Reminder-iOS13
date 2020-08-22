@@ -165,7 +165,7 @@
                                 <color key="textColor" name="textDarkPurple"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGn-VW-Luy">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mGn-VW-Luy">
                                 <rect key="frame" x="315" y="566" width="51" height="31"/>
                                 <color key="onTintColor" name="fgPurple"/>
                             </switch>
@@ -238,6 +238,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="2cS-uT-DAk"/>
                     <connections>
+                        <outlet property="completedSwitch" destination="mGn-VW-Luy" id="g2W-mw-q8f"/>
+                        <outlet property="datePicker" destination="n3o-3K-KhU" id="bHE-fb-leI"/>
+                        <outlet property="titleLabel" destination="pFd-n1-NPS" id="M8t-IQ-h60"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="HomeSegue" id="mpr-2S-pdj"/>
                     </connections>
                 </viewController>

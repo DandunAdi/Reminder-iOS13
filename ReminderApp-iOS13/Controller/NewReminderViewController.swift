@@ -10,7 +10,15 @@ import UIKit
 
 class NewReminderViewController: UIViewController {
     
+    @IBOutlet weak var titleLabel: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var completedSwitch: UISwitch!
+    
     @IBAction func saveButtonDidTapped(_ sender: UIButton) {
+        let reminder = Reminder(title: titleLabel.text!, date: datePicker.date, isCompleted: completedSwitch.isOn)
+        
+        ReminderService.shared.create(reminder)
+        
         performSegue(withIdentifier: "HomeSegue", sender: self)
     }
     
