@@ -20,10 +20,14 @@ class ReminderCell: UITableViewCell {
         formatter.dateFormat = "HH:mm E, d MMM y"
         dateLabel.text = formatter.string(from: reminder.date)
         
-        if reminder.isCompleted {
-            let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: titleLabel.text!)
-            attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
-            titleLabel.attributedText = attributeString
-        }
+
+        // add striketrough on text
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: titleLabel.text!)
+        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: reminder.isCompleted ? 2 : 0, range: NSMakeRange(0, attributeString.length))
+        titleLabel.attributedText = attributeString
+        
+        titleLabel.textColor = reminder.isCompleted ? UIColor(named: "textGray") : UIColor(named: "textDarkPurple")
+        dateLabel.textColor = reminder.isCompleted ? UIColor(named: "textGray") : UIColor(named: "textDarkPurple")
+    
     }
 }

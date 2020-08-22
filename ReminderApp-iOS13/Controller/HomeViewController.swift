@@ -23,3 +23,10 @@ extension HomeViewController: UITableViewDataSource {
         return cell
     }
 }
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        ReminderService.shared.toggleCompleted(at: indexPath.row)
+        tableView.reloadData()
+    }
+}
