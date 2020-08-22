@@ -11,7 +11,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="ReminderApp_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="HomeViewController" customModule="ReminderApp_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,6 +31,9 @@
                                         <state key="normal">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="81N-5f-den" kind="show" identifier="NewSegue" id="2hu-7o-SxD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -122,15 +125,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uIR-UO-zZK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--New Reminder View Controller-->
         <scene sceneID="MZf-lK-aMF">
             <objects>
-                <viewController id="81N-5f-den" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="81N-5f-den" customClass="NewReminderViewController" customModule="ReminderApp_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mC3-xI-Z5L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,6 +179,9 @@
                                 <state key="normal" title="SAVE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButtonDidTapped:" destination="81N-5f-den" eventType="touchUpInside" id="OqF-iP-AC8"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81R-xW-oPl">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -187,6 +194,9 @@
                                             <color key="titleColor" name="textDarkPurple"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="large" weight="medium"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backButtonDidTapped:" destination="81N-5f-den" eventType="touchUpInside" id="rfI-Ej-obC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -226,6 +236,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZzT-fi-jUg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2cS-uT-DAk"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="HomeSegue" id="mpr-2S-pdj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIN-II-cCd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

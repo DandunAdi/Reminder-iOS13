@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD47D06924F0EA9B00873B0F /* NewReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD47D06824F0EA9B00873B0F /* NewReminderViewController.swift */; };
 		FD4BFD2C24EE77E1000EC6C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4BFD2B24EE77E1000EC6C8 /* AppDelegate.swift */; };
 		FD4BFD2E24EE77E1000EC6C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4BFD2D24EE77E1000EC6C8 /* SceneDelegate.swift */; };
 		FD4BFD3324EE77E1000EC6C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4BFD3124EE77E1000EC6C8 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD47D06824F0EA9B00873B0F /* NewReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReminderViewController.swift; sourceTree = "<group>"; };
 		FD4BFD2824EE77E1000EC6C8 /* ReminderApp-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReminderApp-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4BFD2B24EE77E1000EC6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD4BFD2D24EE77E1000EC6C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				FD4BFD4324EE7E4F000EC6C8 /* HomeViewController.swift */,
+				FD47D06824F0EA9B00873B0F /* NewReminderViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4BFD2C24EE77E1000EC6C8 /* AppDelegate.swift in Sources */,
+				FD47D06924F0EA9B00873B0F /* NewReminderViewController.swift in Sources */,
 				FD4BFD2E24EE77E1000EC6C8 /* SceneDelegate.swift in Sources */,
 				FD4BFD4424EE7E4F000EC6C8 /* HomeViewController.swift in Sources */,
 				FD4BFD4624EE8158000EC6C8 /* ReminderCell.swift in Sources */,
