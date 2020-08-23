@@ -20,6 +20,9 @@ class ReminderCell: UITableViewCell {
         formatter.dateFormat = "HH:mm E, d MMM y"
         dateLabel.text = formatter.string(from: reminder.date)
         
+        // corner radius
+        containerView.layer.cornerRadius = 15
+        
 
         // add striketrough on text
         let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: titleLabel.text!)
