@@ -35,4 +35,10 @@ extension HomeViewController: UITableViewDelegate {
         ReminderService.shared.toggleCompleted(at: indexPath.row)
         tableView.reloadData()
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            ReminderService.shared.delete(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
