@@ -77,6 +77,9 @@
                                                             <rect key="frame" x="328.66666666666669" y="54" width="20.333333333333314" height="22"/>
                                                             <color key="tintColor" name="fgPurple"/>
                                                             <state key="normal" image="square.and.pencil" catalog="system"/>
+                                                            <connections>
+                                                                <segue destination="81N-5f-den" kind="show" identifier="EditSegue" id="eUq-8f-rMT"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,6 +106,7 @@
                                         <connections>
                                             <outlet property="containerView" destination="oaF-L1-8BF" id="JcZ-lg-faA"/>
                                             <outlet property="dateLabel" destination="Yb4-2n-mAv" id="2HF-Pc-DtL"/>
+                                            <outlet property="editButton" destination="1Kh-Qy-0ry" id="rXh-ea-Uqw"/>
                                             <outlet property="titleLabel" destination="fC8-mq-Rk0" id="6Gc-7j-hUI"/>
                                         </connections>
                                     </tableViewCell>
@@ -249,6 +253,9 @@
             <point key="canvasLocation" x="924.63768115942037" y="126.5625"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2hu-7o-SxD"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left.circle" catalog="system" width="128" height="121"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>

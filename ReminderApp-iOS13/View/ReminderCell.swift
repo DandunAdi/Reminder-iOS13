@@ -12,9 +12,11 @@ class ReminderCell: UITableViewCell {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var editButton: UIButton!
     
-    func updateCell(reminder: Reminder) {
+    func updateCell(reminder: Reminder, index: Int) {
         titleLabel.text = reminder.title
+        editButton.tag = index
         
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm E, d MMM y"
